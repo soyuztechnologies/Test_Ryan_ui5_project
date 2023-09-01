@@ -5,6 +5,7 @@
             <Button icon="sap-icon://action" press="onGoTo" tooltip="Go to next screen"></Button>
         </headerContent>
         <!-- content -->
+        <!-- Rob changes in BAS Tool -->
         <!-- <Button text="Go to Next" press="onGoTo"></Button> -->
         <content>
             <SearchField id="idSearch" search="onSearch"></SearchField>
