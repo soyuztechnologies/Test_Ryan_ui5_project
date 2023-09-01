@@ -1,5 +1,5 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ats.fin.ap.controller.View1">
-    <Page title="View 1">
+    <Page title="View 1 - Rob">
         <!-- header -->
         <headerContent>
             <Button icon="sap-icon://action" press="onGoTo" tooltip="Go to next screen"></Button>
