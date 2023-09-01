@@ -1,0 +1,3 @@
+<m:SelectDialog xmlns:m="sap.m" id="dialog" confirm="onConfirmPopup">
+    
+</m:SelectDialog>

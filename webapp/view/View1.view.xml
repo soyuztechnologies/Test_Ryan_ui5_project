@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ats.fin.ap.controller.View1">
+    <Page title="View 1">
+        <!-- header -->
+        <headerContent>
+            <Button icon="sap-icon://action" press="onGoTo" tooltip="Go to next screen"></Button>
+        </headerContent>
+        <!-- content -->
+        <!-- <Button text="Go to Next" press="onGoTo"></Button> -->
+        <content>
+            <SearchField id="idSearch" search="onSearch"></SearchField>
+            <!-- Aggregation binding - Absolute path / Relative path -->
+            <List id="idList" mode="SingleSelectMaster" delete="onItemDelete" selectionChange="onSelectItem"
+                  items="{path: '/ProductSet'}" growing="true" growingThreshold="10">
+                <items>
+                    <!-- To display business object for user -->
+                    <ObjectListItem  title="{NAME}" 
+                    intro="{PRODUCT_ID} - {CATEGORY}" 
+                    number="{PRICE}" 
+                    numberUnit="{CURRENCY_CODE}" 
+                    icon="sap-icon://product">
+                        <attributes>
+                            <ObjectAttribute title="Supplier" text="{SUPPLIER_NAME}"></ObjectAttribute>
+                        </attributes>
+                    </ObjectListItem>
+                    
+                </items>
+            </List>
+        </content>
+        <!-- footer -->
+        <footer>
+            <Toolbar >
+                <ToolbarSpacer ></ToolbarSpacer>
+                <Button text="Add" icon="sap-icon://add" press="onAdd"></Button>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
